@@ -9,3 +9,7 @@ toggleMenu.addEventListener("click", () => {
   menu_links.classList.contains("menuIsActive") ? menuIcon.src = "../images/close.png" : menuIcon.src = "../images/menu.png"; ;
   toggleMenu.classList.toggle("active");
 });
+window.addEventListener("scroll", () => {
+  menu_links.classList.remove("menuIsActive");
+  toggleMenu.classList.remove("active");
+});
