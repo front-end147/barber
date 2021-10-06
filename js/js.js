@@ -10,6 +10,7 @@ toggleMenu.addEventListener("click", () => {
   toggleMenu.classList.toggle("active");
 });
 window.addEventListener("scroll", () => {
+  bodyTag.classList.remove("sideMenuIsActive");
   menu_links.classList.remove("menuIsActive");
   toggleMenu.classList.remove("active");
 });
