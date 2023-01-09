@@ -6,7 +6,7 @@ const bodyTag = document.querySelector("body"),
 toggleMenu.addEventListener("click", () => {
   bodyTag.classList.toggle("sideMenuIsActive");
   menu_links.classList.toggle("menuIsActive");
-  menu_links.classList.contains("menuIsActive") ? menuIcon.src = "../images/close.png" : menuIcon.src = "../images/menu.png";
+  menu_links.classList.contains("menuIsActive") ? menuIcon.src = "./images/close.png" : menuIcon.src = "./images/menu.png";
   toggleMenu.classList.toggle("active");
 });
 window.addEventListener("scroll", () => {
